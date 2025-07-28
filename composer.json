@@ -1,0 +1,20 @@
+{
+    "name": "txa/rgl-txa",
+    "description": "Hệ thống rút gọn liên kết hiện đại với giao diện GitHub-style của TXA",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "lbuchs/webauthn": "^2.2",
+        "phpmailer/phpmailer": "^6.10",
+        "endroid/qr-code": "^4.8",
+        "google/recaptcha": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "TXA\\": "src/",
+            "PHPMailer\\PHPMailer\\": "vendor/phpmailer/phpmailer/src/"
+        }
+    }
+}
